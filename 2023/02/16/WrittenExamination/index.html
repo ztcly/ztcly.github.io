@@ -1,0 +1,632 @@
+<!DOCTYPE html><html lang="zh-cn" theme-mode="dark"><head><!-- hexo injector head_begin start -->
+<link rel="stylesheet" href="/project/css/bilicard.css">
+<!-- hexo injector head_begin end --><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>笔试笔记 | ztcly</title><script>var config = {"root":"/project/","search":{"preload":false,"activeHolder":"键入以继续","blurHolder":"数据检索","noResult":"无 $0 相关数据"},"code":{"codeInfo":"$0 - 共 $1 行","copy":"复制","copyFinish":"复制成功","expand":"展开"}}</script><script src="//unpkg.com/mermaid@9.2.2/dist/mermaid.min.js"></script><link rel="stylesheet" href="/project/css/arknights.css"><link rel="stylesheet" href="/css/bilicard.css"><script>if (window.localStorage.getItem('theme-mode') === 'light') document.documentElement.setAttribute('theme-mode', 'light')
+if (window.localStorage.getItem('theme-mode') === 'dark') document.documentElement.setAttribute('theme-mode', 'dark')</script><style>@font-face {
+ font-family: BenderLight;
+ src: local('Bender'), url("/project/font/BenderLight.ttf");
+}
+@font-face {
+ font-family: 'JetBrains Mono';
+ src: local('JetBrains Mono'), url('/project/font/JetBrainsMono-Regular.woff2') format('woff2');
+}</style><!-- hexo injector head_end start -->
+<link rel="stylesheet" href="/project/css/collapse.css">
+<!-- hexo injector head_end end --><meta name="generator" content="Hexo 6.3.0"></head><body><div class="loading" style="opacity: 0"><div class="loadingBar left"></div><div class="loadingBar right"></div></div><main><header class="closed"><nav><div class="navBtn hide"><i class="navBtnIcon"><span class="navBtnIconBar"></span><span class="navBtnIconBar"></span><span class="navBtnIconBar"></span></i></div><div class="navItem" id="search-header"><span class="navItemTitle"><input autocomplete="off" autocorrect="off" autocapitalize="none" placeholder="数据检索" spellcheck="false" maxlength="50" type="text" id="search-input"></span></div><div class="navItem" id="search-holder"></div><div class="search-popup"><div id="search-result"></div></div><ol class="navContent"><li class="navItem"><a class="navBlock" href="/project/"><span class="navItemTitle">Home</span></a></li><li class="navItem" matchdata="categories,tags"><a class="navBlock" href="/project/archives/"><span class="navItemTitle">Archives</span></a></li></ol></nav></header><article><div id="post-bg"><div id="post-title"><h1>笔试笔记</h1><div id="post-info"><span>文章发布时间: <div class="control"><time datetime="2023-02-16T01:59:50.000Z" id="date"> 2023-02-16</time></div></span><br><span>最后更新时间: <div class="control"><time datetime="2023-02-19T08:53:25.906Z" id="updated"> 2023-02-19</time></div></span><br><span>文章总字数: <div class="control">8.9k</div></span><br><span>预计阅读时间: <div class="control">32 分钟</div></span></div></div><hr><div id="post-content"><link rel="stylesheet" type="text&#x2F;css" href="https://cdn.jsdelivr.net/npm/hexo-tag-hint@0.3.1/dist/hexo-tag-hint.min.css"><h2 id="摘要"><a href="#摘要" class="headerlink" title="摘要"></a>摘要</h2><p>本文为自用某笔试大纲及对应知识点。<br>知识点内容根据各个教程收集整理。<br>所有教程版权归各自作者所有。</p>
+<span id="more"></span>
+<h2 id="C语言程序设计"><a href="#C语言程序设计" class="headerlink" title="C语言程序设计"></a>C语言程序设计</h2><h3 id="C语言概述"><a href="#C语言概述" class="headerlink" title="C语言概述"></a>C语言概述</h3><p>C语言是一种计算机程序设计语言。它既有高级语言的特点，又具有汇编语言的特点。它可以作为系统设计语言，编写工作系统应用程序，也可以作为应用程序设计语言，编写不依赖计算机硬件的应用程序.<br><a target="_blank" rel="noopener" href="https://baike.baidu.com/item/c%E8%AF%AD%E8%A8%80%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1/3941?fr=aladdin">原链接</a>  </p>
+<p>特点：</p>
+<ul>
+<li>易于学习。</li>
+<li>结构化语言。</li>
+<li>它产生高效率的程序。</li>
+<li>它可以处理底层的活动。</li>
+<li>它可以在多种计算机平台上编译。<br><a target="_blank" rel="noopener" href="https://www.runoob.com/cprogramming/c-intro.html">原链接</a></li>
+</ul>
+<h3 id="数据类型"><a href="#数据类型" class="headerlink" title="数据类型"></a>数据类型</h3><p>此部分<a target="_blank" rel="noopener" href="https://www.runoob.com/cprogramming/c-data-types.html">原链接</a></p>
+<h4 id="基本类型"><a href="#基本类型" class="headerlink" title="基本类型"></a>基本类型</h4><p>基本类型可分为整数类型和浮点类型  </p>
+<h5 id="整数类型"><a href="#整数类型" class="headerlink" title="整数类型"></a>整数类型</h5><table>
+<thead>
+<tr>
+<th>类型</th>
+<th>取值范围</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>char</td>
+<td>-128 到 127 或 0 到 255</td>
+</tr>
+<tr>
+<td>unsigned char</td>
+<td>0 到 255</td>
+</tr>
+<tr>
+<td>signed char</td>
+<td>-128 到 127</td>
+</tr>
+<tr>
+<td>int</td>
+<td>-32,768 到 32,767 或 -2,147,483,648 到 2,147,483,647</td>
+</tr>
+<tr>
+<td>unsigned int</td>
+<td>0 到 65,535 或 0 到 4,294,967,295</td>
+</tr>
+<tr>
+<td>short</td>
+<td>-32,768 到 32,767</td>
+</tr>
+<tr>
+<td>unsigned short</td>
+<td>0 到 65,535</td>
+</tr>
+<tr>
+<td>long</td>
+<td>-2,147,483,648 到 2,147,483,647</td>
+</tr>
+<tr>
+<td>unsigned long</td>
+<td>0 到 4,294,967,295</td>
+</tr>
+</tbody></table>
+<blockquote>
+<p>注:各种类型的存储大小与系统位数有关</p>
+</blockquote>
+<h5 id="浮点类型"><a href="#浮点类型" class="headerlink" title="浮点类型"></a>浮点类型</h5><table>
+<thead>
+<tr>
+<th>类型</th>
+<th>范围</th>
+<th>精度</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>float</td>
+<td>1.2E-38 到 3.4E+38</td>
+<td>6 位有效位</td>
+</tr>
+<tr>
+<td>double</td>
+<td>2.3E-308 到 1.7E+308</td>
+<td>15 位有效位</td>
+</tr>
+<tr>
+<td>long double</td>
+<td>.4E-4932 到 1.1E+4932</td>
+<td>19 位有效位</td>
+</tr>
+</tbody></table>
+<h5 id="获取储存大小"><a href="#获取储存大小" class="headerlink" title="获取储存大小"></a>获取储存大小</h5><p>使用<code>sizeof()</code>,表达式 <code>sizeof(type)</code> 得到对象或类型的存储字节大小.<br>如：  </p>
+<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><code class="hljs c"><span class="hljs-meta">#<span class="hljs-keyword">include</span> <span class="hljs-string">&lt;stdio.h&gt;</span></span><br><span class="hljs-meta">#<span class="hljs-keyword">include</span> <span class="hljs-string">&lt;limits.h&gt;</span></span><br> <br><span class="hljs-type">int</span> <span class="hljs-title function_">main</span><span class="hljs-params">()</span><br>&#123;<br>   <span class="hljs-built_in">printf</span>(<span class="hljs-string">&quot;大小 : %lu \n&quot;</span>, <span class="hljs-keyword">sizeof</span>(<span class="hljs-type">int</span>));<br>   <span class="hljs-keyword">return</span> <span class="hljs-number">0</span>;<br>&#125;<br></code></pre></td></tr></table></figure>
+
+<h4 id="void-类型"><a href="#void-类型" class="headerlink" title="void 类型"></a>void 类型</h4><p>void 类型指定没有可用的值。通常用于以下三种情况下：</p>
+<ul>
+<li><strong>函数返回为空。</strong>C 中有各种函数都不返回值，或者您可以说它们返回空。不返回值的函数的返回类型为空。例如 void exit (int status);</li>
+<li><strong>函数参数为空。</strong> C 中有各种函数不接受任何参数。不带参数的函数可以接受一个 void。例如 int rand(void);</li>
+<li><strong>指针指向 void。</strong> 类型为 void * 的指针代表对象的地址，而不是类型。例如，内存分配函数 void *malloc( size_t size ); 返回指向 void 的指针，可以转换为任何数据类型。</li>
+</ul>
+<h3 id="运算符与表达式"><a href="#运算符与表达式" class="headerlink" title="运算符与表达式"></a>运算符与表达式</h3><h4 id="运算符"><a href="#运算符" class="headerlink" title="运算符"></a>运算符</h4><p>此部分<a target="_blank" rel="noopener" href="https://www.runoob.com/cprogramming/c-operators.html">原链接</a></p>
+<h5 id="算术运算符"><a href="#算术运算符" class="headerlink" title="算术运算符"></a>算术运算符</h5><table>
+<thead>
+<tr>
+<th>运算符</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>+</td>
+<td>把两个操作数相加</td>
+</tr>
+<tr>
+<td>-</td>
+<td>从第一个操作数中减去第二个操作数</td>
+</tr>
+<tr>
+<td>*</td>
+<td>把两个操作数相乘</td>
+</tr>
+<tr>
+<td>&#x2F;</td>
+<td>分子除以分母</td>
+</tr>
+<tr>
+<td>%</td>
+<td>取模运算符，整除后的余数</td>
+</tr>
+<tr>
+<td>++</td>
+<td>自增运算符，整数值增加 1</td>
+</tr>
+<tr>
+<td>--</td>
+<td>自减运算符，整数值减少 1</td>
+</tr>
+</tbody></table>
+<table>
+<thead>
+<tr>
+<th>运算符</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>a++</td>
+<td>先赋值后运算</td>
+</tr>
+<tr>
+<td>++a</td>
+<td>先运算后赋值</td>
+</tr>
+</tbody></table>
+<h5 id="关系运算符"><a href="#关系运算符" class="headerlink" title="关系运算符"></a>关系运算符</h5><table>
+<thead>
+<tr>
+<th>运算符</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>&#x3D;&#x3D;</td>
+<td>检查两个操作数的值是否相等，如果相等则条件为真。</td>
+</tr>
+<tr>
+<td>!&#x3D;</td>
+<td>检查两个操作数的值是否相等，如果不相等则条件为真。</td>
+</tr>
+<tr>
+<td>&gt;</td>
+<td>检查左操作数的值是否大于右操作数的值，如果是则条件为真。</td>
+</tr>
+<tr>
+<td>&lt;</td>
+<td>检查左操作数的值是否小于右操作数的值，如果是则条件为真。</td>
+</tr>
+<tr>
+<td>&gt;&#x3D;</td>
+<td>检查左操作数的值是否大于或等于右操作数的值，如果是则条件为真。</td>
+</tr>
+<tr>
+<td>&lt;&#x3D;</td>
+<td>检查左操作数的值是否小于或等于右操作数的值，如果是则条件为真。</td>
+</tr>
+</tbody></table>
+<h5 id="逻辑运算符"><a href="#逻辑运算符" class="headerlink" title="逻辑运算符"></a>逻辑运算符</h5><table>
+<thead>
+<tr>
+<th>运算符</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>&amp;&amp;</td>
+<td>逻辑与运算符。如果两个操作数都非零，则条件为真。</td>
+</tr>
+<tr>
+<td>||</td>
+<td>逻辑或运算符。如果两个操作数中有任意一个非零，则条件为真。</td>
+</tr>
+<tr>
+<td>!</td>
+<td>逻辑非运算符。用来逆转操作数的逻辑状态。如果条件为真则逻辑非运算符将使其为假。</td>
+</tr>
+</tbody></table>
+<h5 id="位运算符"><a href="#位运算符" class="headerlink" title="位运算符"></a>位运算符</h5><p>位运算符作用于位，并逐位执行操作。<br>&amp;、 | 和 ^ 的真值表如下所示：  </p>
+<table>
+<thead>
+<tr>
+<th>p</th>
+<th>q</th>
+<th>p &amp; q</th>
+<th>p | q</th>
+<th>p ^ q</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+</tr>
+<tr>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td>1</td>
+<td>1</td>
+</tr>
+<tr>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+<td>0</td>
+</tr>
+<tr>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>1</td>
+</tr>
+</tbody></table>
+<blockquote>
+<p>假设如果 A &#x3D; 60，且 B &#x3D; 13，现在以二进制格式表示，它们如下所示：<br>A &#x3D; 0011 1100<br>B &#x3D; 0000 1101  </p>
+<hr>
+<p>A&amp;B &#x3D; 0000 1100<br>A|B &#x3D; 0011 1101<br>A^B &#x3D; 0011 0001<br>~A  &#x3D; 1100 0011  </p>
+</blockquote>
+<p>下表显示了 C 语言支持的位运算符。假设变量 A 的值为 60，变量 B 的值为 13，则：</p>
+<table>
+<thead>
+<tr>
+<th>运算符</th>
+<th>描述</th>
+<th>实例</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>&amp;</td>
+<td>按位与操作，按二进制位进行”与”运算。运算规则：  0&amp;0&#x3D;0;  0&amp;1&#x3D;0;  1&amp;0&#x3D;0;  1&amp;1&#x3D;1;</td>
+<td>(A &amp; B) 将得到 12，即为 0000 1100</td>
+</tr>
+<tr>
+<td>|</td>
+<td>按位或运算符，按二进制位进行”或”运算。运算规则：  0</td>
+<td>0&#x3D;0;  0</td>
+</tr>
+<tr>
+<td>^</td>
+<td>异或运算符，按二进制位进行”异或”运算。运算规则：  0^0&#x3D;0;  0^1&#x3D;1;  1^0&#x3D;1;  1^1&#x3D;0;</td>
+<td>(A ^ B) 将得到 49，即为 0011 0001</td>
+</tr>
+<tr>
+<td>~</td>
+<td>取反运算符，按二进制位进行”取反”运算。运算规则：  ~1&#x3D;-2;   ~0&#x3D;-1;</td>
+<td>(~A ) 将得到 -61，即为 1100 0011，一个有符号二进制数的补码形式。</td>
+</tr>
+<tr>
+<td>&lt;&lt;</td>
+<td>二进制左移运算符。将一个运算对象的各二进制位全部左移若干位（左边的二进制位丢弃，右边补0）.</td>
+<td>A &lt;&lt; 2 将得到 240，即为 1111 0000</td>
+</tr>
+<tr>
+<td>&gt;&gt;</td>
+<td>二进制右移运算符。将一个数的各二进制位全部右移若干位，正数左补0，负数左补1，右边丢弃。</td>
+<td>A &gt;&gt; 2 将得到 15，即为 0000 1111</td>
+</tr>
+</tbody></table>
+<h5 id="赋值运算符"><a href="#赋值运算符" class="headerlink" title="赋值运算符"></a>赋值运算符</h5><table>
+<thead>
+<tr>
+<th>运算符</th>
+<th>描述</th>
+<th>实例</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>&#x3D;</td>
+<td>简单的赋值运算符，把右边操作数的值赋给左边操作数</td>
+<td>C &#x3D; A + B 将把 A + B 的值赋给 C</td>
+</tr>
+<tr>
+<td>+&#x3D;</td>
+<td>加且赋值运算符，把右边操作数加上左边操作数的结果赋值给左边操作数</td>
+<td>C +&#x3D; A 相当于 C &#x3D; C + A</td>
+</tr>
+<tr>
+<td>-&#x3D;</td>
+<td>减且赋值运算符，把左边操作数减去右边操作数的结果赋值给左边操作数</td>
+<td>C -&#x3D; A 相当于 C &#x3D; C - A</td>
+</tr>
+<tr>
+<td>*&#x3D;</td>
+<td>乘且赋值运算符，把右边操作数乘以左边操作数的结果赋值给左边操作数</td>
+<td>C *&#x3D; A 相当于 C &#x3D; C * A</td>
+</tr>
+<tr>
+<td>&#x2F;&#x3D;</td>
+<td>除且赋值运算符，把左边操作数除以右边操作数的结果赋值给左边操作数</td>
+<td>C &#x2F;&#x3D; A 相当于 C &#x3D; C &#x2F; A</td>
+</tr>
+<tr>
+<td>%&#x3D;</td>
+<td>求模且赋值运算符，求两个操作数的模赋值给左边操作数</td>
+<td>C %&#x3D; A 相当于 C &#x3D; C % A</td>
+</tr>
+<tr>
+<td>&lt;&lt;&#x3D;</td>
+<td>左移且赋值运算符</td>
+<td>C &lt;&lt;&#x3D; 2 等同于 C &#x3D; C &lt;&lt; 2</td>
+</tr>
+<tr>
+<td>&gt;&gt;&#x3D;</td>
+<td>右移且赋值运算符</td>
+<td>C &gt;&gt;&#x3D; 2 等同于 C &#x3D; C &gt;&gt; 2</td>
+</tr>
+<tr>
+<td>&amp;&#x3D;</td>
+<td>按位与且赋值运算符</td>
+<td>C &amp;&#x3D; 2 等同于 C &#x3D; C &amp; 2</td>
+</tr>
+<tr>
+<td>^&#x3D;</td>
+<td>按位异或且赋值运算符</td>
+<td>C ^&#x3D; 2 等同于 C &#x3D; C ^ 2</td>
+</tr>
+<tr>
+<td>|&#x3D;</td>
+<td>按位或且赋值运算符</td>
+<td>C |&#x3D; 2 等同于 C &#x3D; C | 2</td>
+</tr>
+</tbody></table>
+<h5 id="杂项运算符"><a href="#杂项运算符" class="headerlink" title="杂项运算符"></a>杂项运算符</h5><table>
+<thead>
+<tr>
+<th>运算符</th>
+<th>描述</th>
+<th>实例</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>sizeof()</td>
+<td>返回变量的大小。</td>
+<td>sizeof(a) 将返回 4，其中 a 是整数。</td>
+</tr>
+<tr>
+<td>&amp;</td>
+<td>返回变量的地址.</td>
+<td>&amp;a; 将给出变量的实际地址。</td>
+</tr>
+<tr>
+<td>*</td>
+<td>指向一个变量。</td>
+<td>*a; 将指向一个变量。</td>
+</tr>
+<tr>
+<td>? :</td>
+<td>条件表达式</td>
+<td>如果条件为真 ? 则值为 X : 否则值为 Y</td>
+</tr>
+</tbody></table>
+<h4 id="表达式"><a href="#表达式" class="headerlink" title="表达式"></a>表达式</h4><p>此部分<a target="_blank" rel="noopener" href="https://blog.csdn.net/astrotycoon/article/details/50857326">原链接</a>  </p>
+<h5 id="什么是表达式？"><a href="#什么是表达式？" class="headerlink" title="什么是表达式？"></a>什么是表达式？</h5><p>表达式是由一系列运算符（operators）和操作数（operands）组成的序列。这既是表达式的定义，同时也指明了表达式的组成成分。运算符指明了要进行何种运算和操作，而操作数则是运算符操作的对象。 </p>
+<h5 id="表达式有什么作用（表达式的目的）？"><a href="#表达式有什么作用（表达式的目的）？" class="headerlink" title="表达式有什么作用（表达式的目的）？"></a>表达式有什么作用（表达式的目的）？</h5><p>继续解读标准，可以看到表达式的目的有如下几个：  </p>
+<ul>
+<li>计算数值（computation of a value）。<br>表达式“3+2”的目的就是计算数值3和2的和。与此同时，表达式同时也表示这个计算所得到的值。具体的可以参阅下面的“表达式的属性有哪些”小节。</li>
+<li>指明数据对象或者函数（designates an object or a function）<br>例如程序中有int i;声明语句，那么表达式i&#x3D;3中子表达式i就指代i所代表的那个对象（object），即一块连续的内存空间。<br>而在表达式&amp;printf中printf指代的是标准C库中的printf函数。</li>
+<li>产生副作用（generate side effects）<br>副作用（side effects）就是运行时对数据对象或文件的修改。<ul>
+<li>表达式 i &#x3D; 50的副作用是将变量i的值设置为50，这样说是不是让你感到惊讶呢？ 这怎么可能是副作用呢，看起来更像是主要目的啊！ 然而，从C的角度来看，主要的目的却是对表达式求值。  </li>
+<li>表达式printf(“ABC”)的值为3（实际打印的字符数，不包括字符’\0’），副作用就是在标准输出设备上连续打印字符A、B和C。  </li>
+<li>注:并不是所有的表达式都有副作用，表达式2+3的值为5，但是没有任何副作用。</li>
+</ul>
+</li>
+<li>以上目的的组合（combination）</li>
+</ul>
+<h5 id="表达式的属性有哪些（表达式的属性）？"><a href="#表达式的属性有哪些（表达式的属性）？" class="headerlink" title="表达式的属性有哪些（表达式的属性）？"></a>表达式的属性有哪些（表达式的属性）？</h5><p>任何表达式都有值和类型两个基本属性。</p>
+<h3 id="循环控制"><a href="#循环控制" class="headerlink" title="循环控制"></a>循环控制</h3><p>循环语句允许我们多次执行一个语句或语句组<br>此部分<a target="_blank" rel="noopener" href="https://www.runoob.com/cprogramming/c-loops.html">原链接</a>  </p>
+<h4 id="循环类型"><a href="#循环类型" class="headerlink" title="循环类型"></a>循环类型</h4><p>C 语言提供了以下几种循环类型:  </p>
+<table>
+<thead>
+<tr>
+<th>循环类型</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>while 循环</td>
+<td>当给定条件为真时，重复语句或语句组。它会在执行循环主体之前测试条件。</td>
+</tr>
+<tr>
+<td>for 循环</td>
+<td>多次执行一个语句序列，简化管理循环变量的代码。</td>
+</tr>
+<tr>
+<td>do…while 循环</td>
+<td>除了它是在循环主体结尾测试条件外，其他与 while 语句类似。</td>
+</tr>
+<tr>
+<td>嵌套循环</td>
+<td>您可以在 while、for 或 do..while 循环内使用一个或多个循环。</td>
+</tr>
+</tbody></table>
+<h4 id="循环控制语句"><a href="#循环控制语句" class="headerlink" title="循环控制语句"></a>循环控制语句</h4><p>循环控制语句改变你代码的执行顺序,通过它们可以实现代码的跳转。<br>C 提供了下列的循环控制语句：  </p>
+<table>
+<thead>
+<tr>
+<th>控制语句</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>break 语句</td>
+<td>终止循环或 switch 语句，程序流将继续执行紧接着循环或 switch 的下一条语句。</td>
+</tr>
+<tr>
+<td>continue 语句</td>
+<td>告诉一个循环体立刻停止本次循环迭代，重新开始下次循环迭代。</td>
+</tr>
+<tr>
+<td>goto 语句</td>
+<td>将控制转移到被标记的语句。但是不建议在程序中使用 goto 语句。</td>
+</tr>
+</tbody></table>
+<h3 id="数组"><a href="#数组" class="headerlink" title="数组"></a>数组</h3><p>C 语言支持数组数据结构，它可以存储一个固定大小的相同类型元素的顺序集合。数组是用来存储一系列数据，但它往往被认为是一系列相同类型的变量。  </p>
+<h4 id="声明数组"><a href="#声明数组" class="headerlink" title="声明数组"></a>声明数组</h4><p>在 C 中要声明一个数组，需要指定元素的类型和元素的数量:<code>type arrayName [ arraySize ];</code>.这叫做一维数组。arraySize 必须是一个大于零的整数常量，type 可以是任意有效的 C 数据类型。  </p>
+<h4 id="访问数组元素"><a href="#访问数组元素" class="headerlink" title="访问数组元素"></a>访问数组元素</h4><p>数组元素可以通过数组名称加索引进行访问。元素的索引是放在方括号内，跟在数组名称的后边。例如：<code>double salary = balance[9];</code>  </p>
+<h4 id="多维数组"><a href="#多维数组" class="headerlink" title="多维数组"></a>多维数组</h4><p>C 语言支持多维数组。多维数组声明的一般形式如下：</p>
+<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs c">type name[size1][size2]...[sizeN];<br></code></pre></td></tr></table></figure>
+
+<h5 id="二维数组"><a href="#二维数组" class="headerlink" title="二维数组"></a>二维数组</h5><p>多维数组最简单的形式是二维数组。一个二维数组，在本质上，是一个一维数组的列表。声明一个 x 行 y 列的二维整型数组，形式如下：  </p>
+<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs c">type arrayName [ x ][ y ];<br></code></pre></td></tr></table></figure>
+
+<p>其中，type 可以是任意有效的 C 数据类型，arrayName 是一个有效的 C 标识符。一个二维数组可以被认为是一个带有 x 行和 y 列的表格。下面是一个二维数组，包含 3 行和 4 列：  </p>
+<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs c"><span class="hljs-type">int</span> x[<span class="hljs-number">3</span>][<span class="hljs-number">4</span>];<br></code></pre></td></tr></table></figure>
+
+<h5 id="数组作为参数"><a href="#数组作为参数" class="headerlink" title="数组作为参数"></a>数组作为参数</h5><p>如果您想要在函数中传递一个一维数组作为参数，您必须以下面三种方式来声明函数形式参数，这三种声明方式的结果是一样的，因为每种方式都会告诉编译器将要接收一个整型指针。同样地，您也可以传递一个多维数组作为形式参数。  </p>
+<p>方式 1<br>形式参数是一个指针（您可以在下一章中学习到有关指针的知识）:  </p>
+<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><code class="hljs c"><span class="hljs-type">void</span> <span class="hljs-title function_">myFunction</span><span class="hljs-params">(<span class="hljs-type">int</span> *param)</span><br>&#123;<br><br>&#125;<br></code></pre></td></tr></table></figure>
+
+<p>方式 2<br>形式参数是一个已定义大小的数组：  </p>
+<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><code class="hljs c"><span class="hljs-type">void</span> <span class="hljs-title function_">myFunction</span><span class="hljs-params">(<span class="hljs-type">int</span> param[<span class="hljs-number">10</span>])</span><br>&#123;<br><br>&#125;<br></code></pre></td></tr></table></figure>
+
+<p>方式 3<br>形式参数是一个未定义大小的数组：  </p>
+<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><code class="hljs c"><span class="hljs-type">void</span> <span class="hljs-title function_">myFunction</span><span class="hljs-params">(<span class="hljs-type">int</span> param[])</span><br>&#123;<br><br>&#125;<br></code></pre></td></tr></table></figure>
+
+<h3 id="函数"><a href="#函数" class="headerlink" title="函数"></a>函数</h3><p>函数是一组一起执行一个任务的语句。每个 C 程序都至少有一个函数，即主函数 <code>main()</code> ，所有简单的程序都可以定义其他额外的函数。<br>函数声明告诉编译器函数的名称、返回类型和参数。函数定义提供了函数的实际主体。<br>C 标准库提供了大量的程序可以调用的内置函数。例如，函数 <code>strcat()</code> 用来连接两个字符串，函数<code> memcpy()</code> 用来复制内存到另一个位置。  </p>
+<p>此部分<a target="_blank" rel="noopener" href="https://www.runoob.com/cprogramming/c-functions.html">原链接</a></p>
+<h4 id="定义函数"><a href="#定义函数" class="headerlink" title="定义函数"></a>定义函数</h4><p>C 语言中的函数定义的一般形式如下：  </p>
+<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><code class="hljs c">return_type <span class="hljs-title function_">function_name</span><span class="hljs-params">( parameter <span class="hljs-built_in">list</span> )</span><br>&#123;<br>   body of the function<br>&#125;<br></code></pre></td></tr></table></figure>
+
+<p>在 C 语言中，函数由一个函数头和一个函数主体组成。下面列出一个函数的所有组成部分：</p>
+<ul>
+<li><strong>返回类型</strong>：一个函数可以返回一个值。return_type 是函数返回的值的数据类型。有些函数执行所需的操作而不返回值，在这种情况下，return_type 是关键字 void。</li>
+<li><strong>函数名称</strong>：这是函数的实际名称。函数名和参数列表一起构成了函数签名。</li>
+<li><strong>参数</strong>：参数就像是占位符。当函数被调用时，您向参数传递一个值，这个值被称为实际参数。参数列表包括函数参数的类型、顺序、数量。参数是可选的，也就是说，函数可能不包含参数。<br>函数主体：函数主体包含一组定义函数执行任务的语句。</li>
+</ul>
+<h4 id="函数参数"><a href="#函数参数" class="headerlink" title="函数参数"></a>函数参数</h4><p>如果函数要使用参数，则必须声明接受参数值的变量。这些变量称为函数的形式参数。<br>形式参数就像函数内的其他局部变量，在进入函数时被创建，退出函数时被销毁。<br>当调用函数时，有两种向函数传递参数的方式：  </p>
+<table>
+<thead>
+<tr>
+<th>调用类型</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>传值调用</td>
+<td>该方法把参数的实际值复制给函数的形式参数。在这种情况下，修改函数内的形式参数不会影响实际参数。</td>
+</tr>
+<tr>
+<td>引用调用</td>
+<td>通过指针传递方式，形参为指向实参地址的指针，当对形参的指向操作时，就相当于对实参本身进行的操作。</td>
+</tr>
+</tbody></table>
+<p>默认情况下，C 使用传值调用来传递参数。一般来说，这意味着函数内的代码不能改变用于调用函数的实际参数。  </p>
+<h3 id="指针"><a href="#指针" class="headerlink" title="指针"></a>指针</h3><p>此部分<a target="_blank" rel="noopener" href="https://www.runoob.com/cprogramming/c-pointers.html">原链接</a></p>
+<p>每一个变量都有一个内存位置，每一个内存位置都定义了可使用 &amp; 运算符访问的地址，它表示了在内存中的一个地址。  </p>
+<p>指针也就是内存地址，指针变量是用来存放内存地址的变量。就像其他变量或常量一样，您必须在使用指针存储其他变量地址之前，对其进行声明。指针变量声明的一般形式为：  </p>
+<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs c">type *var_name;<br></code></pre></td></tr></table></figure>
+
+<p>在这里，type 是指针的基类型，它必须是一个有效的 C 数据类型，var_name 是指针变量的名称。用来声明指针的星号 * 与乘法中使用的星号是相同的。  但是，在这个语句中，星号是用来指定一个变量是指针。以下是有效的指针声明：  </p>
+<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><code class="hljs c"><span class="hljs-type">int</span>    *ip;    <span class="hljs-comment">/* 一个整型的指针 */</span><br><span class="hljs-type">double</span> *dp;    <span class="hljs-comment">/* 一个 double 型的指针 */</span><br><span class="hljs-type">float</span>  *fp;    <span class="hljs-comment">/* 一个浮点型的指针 */</span><br><span class="hljs-type">char</span>   *ch;    <span class="hljs-comment">/* 一个字符型的指针 */</span><br></code></pre></td></tr></table></figure>
+
+<p>所有实际数据类型，不管是整型、浮点型、字符型，还是其他的数据类型，对应指针的值的类型都是一样的，都是一个代表内存地址的长的十六进制数。</p>
+<p>不同数据类型的指针之间唯一的不同是，指针所指向的变量或常量的数据类型不同。</p>
+<h4 id="指针使用实例"><a href="#指针使用实例" class="headerlink" title="指针使用实例"></a>指针使用实例</h4><figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><code class="hljs c"><span class="hljs-meta">#<span class="hljs-keyword">include</span> <span class="hljs-string">&lt;stdio.h&gt;</span></span><br> <br><span class="hljs-type">int</span> <span class="hljs-title function_">main</span> <span class="hljs-params">()</span><br>&#123;<br>   <span class="hljs-type">int</span>  var = <span class="hljs-number">20</span>;   <span class="hljs-comment">/* 实际变量的声明 */</span><br>   <span class="hljs-type">int</span>  *ip;        <span class="hljs-comment">/* 指针变量的声明 */</span><br> <br>   ip = &amp;var;  <span class="hljs-comment">/* 在指针变量中存储 var 的地址 */</span><br> <br>   <span class="hljs-built_in">printf</span>(<span class="hljs-string">&quot;var 变量的地址: %p\n&quot;</span>, &amp;var  );<br> <br>   <span class="hljs-comment">/* 在指针变量中存储的地址 */</span><br>   <span class="hljs-built_in">printf</span>(<span class="hljs-string">&quot;ip 变量存储的地址: %p\n&quot;</span>, ip );<br> <br>   <span class="hljs-comment">/* 使用指针访问值 */</span><br>   <span class="hljs-built_in">printf</span>(<span class="hljs-string">&quot;*ip 变量的值: %d\n&quot;</span>, *ip );<br> <br>   <span class="hljs-keyword">return</span> <span class="hljs-number">0</span>;<br>&#125;<br></code></pre></td></tr></table></figure>
+
+<p>当上面的代码被编译和执行时，它会产生下列结果：  </p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs plaintext">var 变量的地址: 0x7ffeeef168d8<br>ip 变量存储的地址: 0x7ffeeef168d8<br>*ip 变量的值: 20<br></code></pre></td></tr></table></figure>
+
+<h4 id="指针的运算"><a href="#指针的运算" class="headerlink" title="指针的运算"></a>指针的运算</h4><p>C 指针是一个用数值表示的地址。因此，您可以对指针执行算术运算。可以对指针进行四种算术运算：++、–、+、-。  </p>
+<p>假设 ptr 是一个指向地址 1000 的整型指针，是一个 32 位的整数，让我们对该指针执行下列的算术运算：<br><code>ptr++</code><br>在执行完上述的运算之后，ptr 将指向位置 1004，因为 ptr 每增加一次，它都将指向下一个整数位置，即当前位置往后移 4 字节。这个运算会在不影响内存位置中实际值的情况下，移动指针到下一个内存位置。如果 ptr 指向一个地址为 1000 的字符，上面的运算会导致指针指向位置 1001，因为下一个字符位置是在 1001。  </p>
+<p>我们概括一下：  </p>
+<p>指针的每一次递增，它其实会指向下一个元素的存储单元。<br>指针的每一次递减，它都会指向前一个元素的存储单元。<br>指针在递增和递减时跳跃的字节数取决于指针所指向变量数据类型长度，比如 int 就是 4 个字节。  </p>
+<h4 id="指针的比较"><a href="#指针的比较" class="headerlink" title="指针的比较"></a>指针的比较</h4><p>指针可以用关系运算符进行比较，如 &#x3D;&#x3D;、&lt; 和 &gt;。如果 p1 和 p2 指向两个相关的变量，比如同一个数组中的不同元素，则可对 p1 和 p2 进行大小比较。  </p>
+<h3 id="结构体"><a href="#结构体" class="headerlink" title="结构体"></a>结构体</h3><p>此部分<a target="_blank" rel="noopener" href="https://www.runoob.com/cprogramming/c-structures.html">原链接</a></p>
+<p>C 数组允许定义可存储相同类型数据项的变量，结构是 C 编程中另一种用户自定义的可用的数据类型，它允许您存储不同类型的数据项。  </p>
+<h4 id="定义结构"><a href="#定义结构" class="headerlink" title="定义结构"></a>定义结构</h4><p>为了定义结构，须使用 struct 语句。struct 语句定义了一个包含多个成员的新的数据类型，struct 语句的格式如下：  </p>
+<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><code class="hljs c"><span class="hljs-class"><span class="hljs-keyword">struct</span> <span class="hljs-title">tag</span> &#123;</span> <br>    member-<span class="hljs-built_in">list</span><br>    member-<span class="hljs-built_in">list</span> <br>    member-<span class="hljs-built_in">list</span>  <br>    ...<br>&#125; variable-<span class="hljs-built_in">list</span> ;<br></code></pre></td></tr></table></figure>
+
+<ul>
+<li>tag 是结构体标签。</li>
+<li>member-list 是标准的变量定义，比如 int i; 或者 float f，或者其他有效的变量定义。</li>
+<li>variable-list 结构变量，定义在结构的末尾，最后一个分号之前，您可以指定一个或多个结构变量。</li>
+</ul>
+<h3 id="共用体"><a href="#共用体" class="headerlink" title="共用体"></a>共用体</h3><p>共用体是一种特殊的数据类型，允许您在相同的内存位置存储不同的数据类型。<strong>您可以定义一个带有多成员的共用体，但是任何时候只能有一个成员带有值。</strong> 共用体提供了一种使用相同的内存位置的有效方式。  </p>
+<h4 id="定义共用体"><a href="#定义共用体" class="headerlink" title="定义共用体"></a>定义共用体</h4><p>为了定义共用体，您必须使用 <code>union</code> 语句，方式与定义结构类似。<code>union</code> 语句定义了一个新的数据类型，带有多个成员。<code>union</code> 语句的格式如下：</p>
+<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><code class="hljs c"><span class="hljs-class"><span class="hljs-keyword">union</span> [<span class="hljs-title">union</span> <span class="hljs-title">tag</span>]</span><br><span class="hljs-class">&#123;</span><br>   member definition;<br>   member definition;<br>   ...<br>   member definition;<br>&#125; [one or more <span class="hljs-class"><span class="hljs-keyword">union</span> <span class="hljs-title">variables</span>];</span><br></code></pre></td></tr></table></figure>
+
+<p><code>union tag</code> 是可选的，每个 <code>member definition</code> 是标准的变量定义，比如 <code>int i</code>; 或者 <code>float f</code>; 或者其他有效的变量定义。在共用体定义的末尾，最后一个分号之前，您可以指定一个或多个共用体变量，这是可选的。下面定义一个名为 <code>Data</code> 的共用体类型，有三个成员<code> i</code>、<code>f</code> 和 <code>str</code>：</p>
+<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><code class="hljs c"><span class="hljs-class"><span class="hljs-keyword">union</span> <span class="hljs-title">Data</span></span><br><span class="hljs-class">&#123;</span><br>   <span class="hljs-type">int</span> i;<br>   <span class="hljs-type">float</span> f;<br>   <span class="hljs-type">char</span>  str[<span class="hljs-number">20</span>];<br>&#125; data;<br></code></pre></td></tr></table></figure>
+
+<p>现在，<code>Data</code> 类型的变量可以存储一个整数、一个浮点数，或者一个字符串。这意味着一个变量（相同的内存位置）可以存储多个多种类型的数据。您可以根据需要在一个共用体内使用任何内置的或者用户自定义的数据类型。  </p>
+<p>共用体占用的内存应足够存储共用体中最大的成员。例如，在上面的实例中，<code>Data</code> 将占用 20 个字节的内存空间，因为在各个成员中，字符串所占用的空间是最大的。  </p>
+<p>为了访问共用体的成员，我们使用成员访问运算符（.）</p>
+<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br></pre></td><td class="code"><pre><code class="hljs c"><span class="hljs-meta">#<span class="hljs-keyword">include</span> <span class="hljs-string">&lt;stdio.h&gt;</span></span><br><span class="hljs-meta">#<span class="hljs-keyword">include</span> <span class="hljs-string">&lt;string.h&gt;</span></span><br> <br><span class="hljs-class"><span class="hljs-keyword">union</span> <span class="hljs-title">Data</span></span><br><span class="hljs-class">&#123;</span><br>   <span class="hljs-type">int</span> i;<br>   <span class="hljs-type">float</span> f;<br>   <span class="hljs-type">char</span>  str[<span class="hljs-number">20</span>];<br>&#125;;<br> <br><span class="hljs-type">int</span> <span class="hljs-title function_">main</span><span class="hljs-params">( )</span><br>&#123;<br>   <span class="hljs-class"><span class="hljs-keyword">union</span> <span class="hljs-title">Data</span> <span class="hljs-title">data</span>;</span>        <br> <br>   data.i = <span class="hljs-number">10</span>;<br>   data.f = <span class="hljs-number">220.5</span>;<br>   <span class="hljs-built_in">strcpy</span>( data.str, <span class="hljs-string">&quot;C Programming&quot;</span>);<br> <br>   <span class="hljs-built_in">printf</span>( <span class="hljs-string">&quot;data.i : %d\n&quot;</span>, data.i);<br>   <span class="hljs-built_in">printf</span>( <span class="hljs-string">&quot;data.f : %f\n&quot;</span>, data.f);<br>   <span class="hljs-built_in">printf</span>( <span class="hljs-string">&quot;data.str : %s\n&quot;</span>, data.str);<br> <br>   <span class="hljs-keyword">return</span> <span class="hljs-number">0</span>;<br>&#125;<br></code></pre></td></tr></table></figure>
+
+<p>当上面的代码被编译和执行时，它会产生下列结果：  </p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs plaintext">data.i : 1917853763<br>data.f : 4122360580327794860452759994368.000000<br>data.str : C Programming<br></code></pre></td></tr></table></figure>
+
+
+<h2 id="计算机网络"><a href="#计算机网络" class="headerlink" title="计算机网络"></a>计算机网络</h2><h3 id="计算机网络体系结构"><a href="#计算机网络体系结构" class="headerlink" title="计算机网络体系结构"></a>计算机网络体系结构</h3><p>此部分<a target="_blank" rel="noopener" href="https://blog.csdn.net/yyyzf/article/details/126246633">原链接</a></p>
+<p>计算机网络的体系结构是指这个计算机网络及其部件所应完成 的功能的一组抽象定义,是描述计算机网络通信方法的抽象模型结构,一般是指<strong>计算机网络的各层及其协议的集合</strong>。  </p>
+<h3 id="OSI参考模型"><a href="#OSI参考模型" class="headerlink" title="OSI参考模型"></a>OSI参考模型</h3><h4 id="分层原则"><a href="#分层原则" class="headerlink" title="分层原则"></a>分层原则</h4><ul>
+<li>网中各结点都具有相同的层次</li>
+<li>不同结点的同等层具有相同的功能</li>
+<li>同一结点内相邻层之间通过接口通信</li>
+<li>每层可以使用下层提供的服务，并向其上层提供服务</li>
+<li>不同结点的对等层通过协议来实现对等层次之间的通信</li>
+</ul>
+<h4 id="层次结构"><a href="#层次结构" class="headerlink" title="层次结构"></a>层次结构</h4><p>1.物理层:利用传输介质实现比特序列的传输（比特序列也就是二进制位），它需要为它的上层数据链路层提供服务。<br>2.数据链路层：采用差错控制与流量控制方法，使得有差错的物理线路变成无差错的数据链路<br>3.网络层(network layer):实现路由选择、分组转发与拥塞控制等功能，为“分组”传输选择“最佳”的路由<br>4.运输层(transport layer):向高层用户提供可靠的“端-端”通信服务，向高层屏蔽下层数据通信的具体细节<br>5.会话层(session layer):维护两个通信计算机之间的进程通信，管理数据交换<br>6.表示层(presentation layer):处理两个通信的计算机系统的数据表示方式，完成数据的格式变换、加密与解密、压缩与恢复<br>7.应用层(application layer):需要为用户提供一个平台，允许用户去开发能够满足自己需求的网络通讯。为应用软件提供多种网络服务，例如万维网、文件传输、电子邮件与其它服务等  </p>
+<p><img src="/images/Network/NetworkPic01.png" alt="OSI"></p>
+<h3 id="TCP-x2F-IP参考模型"><a href="#TCP-x2F-IP参考模型" class="headerlink" title="TCP&#x2F;IP参考模型"></a>TCP&#x2F;IP参考模型</h3><h4 id="层次结构-1"><a href="#层次结构-1" class="headerlink" title="层次结构"></a>层次结构</h4><ul>
+<li><p>网络接口层<br>是 TCP&#x2F;IP 参考模型的最低层，它负责通过网络发送和接收IP数据。</p>
+</li>
+<li><p>互联网层:<br>使用IP协议提供“尽力而为(best effort)”的网络分组传输服务。将运输层报文段封装成IP数据报，选择适当的发送路径并将数据报转发到下一个结点。（关键部分）</p>
+</li>
+<li><p>运输层:<br>负责在会话的进程之间建立和维护“端-端”的连接。定义了两种不同的协议:传输控制协议(TCP)与用户数据报协议(UDP)。（UDP特点是高效，对可靠性要求不高，但是对实时性要求比较高的传输。我们可以使用它为其服务，比如说传输语音，传输视频）</p>
+</li>
+<li><p>应用层:<br>和 OSI 参考模型的应用层类似，为应用软件提供多种网络服务</p>
+</li>
+</ul>
+<p><img src="/images/Network/NetworkPic02.png" alt="TCPIP"></p>
+<h3 id="物理层"><a href="#物理层" class="headerlink" title="物理层"></a>物理层</h3><p>此部分<a target="_blank" rel="noopener" href="https://blog.csdn.net/FireAndWind/article/details/124356509">原链接</a></p>
+<h4 id="基本概念"><a href="#基本概念" class="headerlink" title="基本概念"></a>基本概念</h4><h5 id="数据、信号与码元"><a href="#数据、信号与码元" class="headerlink" title="数据、信号与码元"></a>数据、信号与码元</h5><p>数据是传送信息的实体。信号则是数据的电气或电气表现，是数据在传输过程中的存在形式。<br>连续变化的数据或信号称为模拟数据或模拟信号；取值仅允许为有限的几个离散数据的数据或信号称为数字数据或数字信号。<br>数据的传输方式可分为串行传输和并行传输。串行传输是指1比特1地按照时间顺序传输（远距离通信通常采用串行传输），并行传输是指若干比特通过多条通信信道同时传输。<br>码元是指用一个固定时长的信号波形（数字脉冲）表示一位k进制数字，代表不同离散数值的基本波形，是数字通信中数字信号的计量单位。时长内的信号称为k进制码元，该时长称为码元宽度。  </p>
+<h5 id="信源、信道与信宿"><a href="#信源、信道与信宿" class="headerlink" title="信源、信道与信宿"></a>信源、信道与信宿</h5><p>数据通信是指数字计算机或其他数字终端之间的通信，一个数据通信系统主要划分为信源、信道和信宿三部分。  </p>
+<p>信源是产生和发送数据的源头；<br>信宿是接受数据的终点。  </p>
+<p>发送端信源发出的信息需要通过变换器转换成适合于在信道上传输的信号，而通过信道传输到接收端的信号先有反变换器转换成原始信息，再发送给信宿。</p>
+<p>信道与电路并不等同，信道是信号的传输媒介。一条通信线路往往包含一条发送信道和一条接收信道。噪声源是信道上的噪声（对信号的干扰）及分散在通信系统其他各处的噪声的集中表示。</p>
+<p>信道按传输信号形式的不同，可分为传送模拟信号的模拟信道和传送数字信号的数字信号两大类。</p>
+<p>信道按传输介质的不同可分为无线信道和有限信道。</p>
+<p>信道上传输的信号有基带信号和宽带信号之分。基带信号将数字信号1,0直接用两种不同的电压表示，传送到数字信道上传输（基带传输）；宽带信号将基带信号进行调制后形成频分复用模拟信号，送到模拟信道上传输（宽带传输）。</p>
+<p>从通信双方信息的交互方式看，可分为三种基本方式：</p>
+<ul>
+<li>单向通信。只有一个方向的通信而没有反方向的交互，仅需一条信道。如无线电广播、电视广播。</li>
+<li>半双工通信。通信的双方都可以发送和接受信息，但任何一方都不同同时发送和接受信息，因此需要两条信道。</li>
+<li>全双工通信。通信双方都可以同时发送和接受信息，需要两条信道。<br>信道的极限容量是指信道的最高码元传输速率或信道的极限信息传输速率。</li>
+</ul>
+<h5 id="速率、波特与带宽"><a href="#速率、波特与带宽" class="headerlink" title="速率、波特与带宽"></a>速率、波特与带宽</h5><p>速率也称数据率，值数据传输速率，表示单位时间内传输的数据量。可用码元传输速率和信息传输速率表示。</p>
+<ul>
+<li>码元传输速率。又称波特率，表示单位时间内数字通信系统所传输的码元个数（也称脉冲个数或信号变化的次数）；单位波特（Baud）1波特表示数字通信系统传输一个码元；码元速率与进制数无关，可以是多进制的也可以是二进制的。</li>
+<li>信息传输速率。又称信息速率、比特率等，表示单位时间内数字通信系统传输的二进制码元格式（比特数），单位是比特&#x2F;秒（b&#x2F;s）<br>注：波特和比特是两个不同的概念，码元传输速率也称调制速率、波形速率或符号速率。但码元传输速率与信息传输速率在数量却有一定关系。如一个码元携带n比特的信息量，则M波特率的码元传输速率所对应的信息传输速率为Mn比特&#x2F;秒。</li>
+</ul>
+<p>带宽原指信号具有的频带宽度，单位赫兹（Hz）。带宽与数据率存在数值上的互换关系，因此常用来表示网络的通信线路所能传输数据的能力。因此，带宽表示单位时间内从网络的某一点到另一点所能通过的最高数据率。此时带宽的单位不是Hz，而是b&#x2F;s。</p>
+<h5 id="编码与调制"><a href="#编码与调制" class="headerlink" title="编码与调制"></a>编码与调制</h5><p>数据无论是数字的还是模拟的，为了传输都必须转变为信号。把数据变换为模拟信号的过程称为调制，把数据变换为数字信号的过程称为编码。</p>
+<p>信号是数据的具体表现形式。数字数据可以通过数字发送器转换为数字信号传输，也可通过调制转换成模拟信号传输；同样的，模拟数据可以通过PCM编码器转换成数字信号传输，也可以通过放大器调制器转换成模拟信号传输。这样新城了下列4中编码方式。</p>
+<ul>
+<li>数字数据编码为数字信号<br>数字数据编码用于基带传输中，在基本不改变数字信号数据频率情况下，直接传输数字信号。<ul>
+<li>归零编码（RZ)。在RZ中用高电平电表1、低电平代表0（或者相反）。每个时钟周期的中间均跳变到低电平(归零)，接收方根据跳变调整本方的时钟基准，这为传输双方提供了自同步机制。但归零需要占用一定带宽，因此传输效率收到了一定的影响。</li>
+<li>非归零编码（NRZ）。NRZ与RZ区别是不用归零。一个周期可全部用来传输数据。但NRZ编码无法传递时钟信号，双方难以同步，若需传输告诉同步数据，需要都带有时钟线。</li>
+<li>反向非归零编码（NRZI）。NRZI与NRZ的区别是用信号的翻转代表0，信号保持不变代表1，翻转的信号本身可以作为一种通知机制。这种编码方式继承了前两种编码的优点，技能传输时钟信号，又能尽量不损失系统带宽。例如USB2.0的通信编码方式就是NRZI编码。</li>
+<li>曼切斯特编码。ME将一个码元分成两个相等的间隔。前一个为高电平而后一个为低电平表示码元1；码元0的表示方法正好相反。该编码特点是，在每个码元的中间出现电平跳变，位中间的跳变即作为时钟信号（可用于同步），有作为数据信号，但所占的频带宽度是原始频带宽度的两倍。例如以太网使用的编码方式就是曼切斯特编码。</li>
+<li>差分曼切斯特编码。常用于局域网传输。其规则为：若码元为1，则前半个码元的电平与上一码元的后半个码元的电平相同；若码元为0，则情形相反。该编码特点是，在每个码元中间都有一次电平的的跳转，可实现自同步，且抗干扰性较好。</li>
+<li>4B&#x2F;5B编码，将欲发数据流的每4位作为一组，按照4B&#x2F;5B编码规则将其转换成相应的5位码。5位码共32种组合。但只采用其中的16种对应16种不同的4位码，其他16种作为控制码或保留。</li>
+</ul>
+</li>
+<li>数字数据调制为模拟信号<br>数字数据调制技术在发送端将数字信号转换为模拟信号，而在接收端将模拟信号换源为数字信号，分别对应调制解调器的调制和解调过程。基本的数字调制方法有如下几种：<ul>
+<li><p>幅移键控（ASK）。通过改变载波信号的振幅来表示数字信号1,和0，而载波的频率和相位都不改变。笔记容易实现，但抗干扰能力差。</p>
+</li>
+<li><p>频移键控（FSK）。通过改变载波信号的频率来表示数字喜好1和0，而载波的振幅和相位都不改变，容易实现，抗干扰能力强，应用广泛。</p>
+</li>
+<li><p>相移键控（PSK）。通过改变载波信号的相位来表示数字信号1和0，而载波的振幅和频率都不改变。它又分为绝对调相和相对调相。</p>
+</li>
+<li><p>正交振幅调制（OAM）。在频率相同的前提下，将ASK和PSK结合起来，形成叠加信号。</p>
+</li>
+</ul>
+</li>
+<li>模拟数据编码为数字信号<br>这种编码方式最典型的例子是常用于对音频信号进行编码的脉码调制（PCM）。主要包括三个步骤，采样、量化和编码。<br>采样定理：将模拟信号转换成数字信号时，结社原始信号中的最大频率为f，那么采样频率f（采样）必须大于等于最大频率f的两倍，才能保证采样后的数字信号完整保留原始模拟信号的信息。采样定理又称为奈奎斯特定理。<br>采样是指对模拟信号进行周期性扫描，把时间上连续的信号变成时间上离散的信号。根据采样定理，当采样的频率大于等于模拟数据的频带宽度（最高变化频率）的两倍时，所得的离散信号可以无失真地代表被采样的模拟数据。<br>量化是把采样取得的点评幅值按照一定的分级标度转化为相应的数字值并取整数，这样就把连续的电平幅值转换为了离散的数字量。采样和量化的实质就是分割和转换。<br>编码是把量化的结果转化为与之相对应的二进制编码。</li>
+<li>模拟数据调制为模拟信号<br>为实现传输的有效性，可能需要较高的频率。这种调制方式可以使用频分复用(FDM)技术。充分利用带宽资源。例如电话机和本地局交换机采用模拟信号传输模拟数据的编码方式，模拟的声音数据时加载到模拟的载波信号中传输的。</li>
+</ul>
+<div id="paginator"></div></div><div id="post-footer"><div id="pages"><div class="footer-link" style="width: 50%;text-align:right;border-right:1px #fe2 solid"><a href="/project/2023/02/16/FabricServer1.19.3Update0216/">← Next Minecraft1.19.3Fabric0216服务端 更新日志</a></div><div class="footer-link" style="width: 50%;right:1px;border-left:1px #fe2 solid"><a href="/project/2023/02/14/PluginTest/">部分插件用法及测试 Prev →</a></div></div></div></div><div class="bottom-btn"><div><a id="to-top" onClick="scrolls.scrolltop();" title="回到顶部" style="opacity: 0; display: none;">∧</a><a id="to-index" href="#toc-div" title="文章目录">≡</a><a id="color-mode" onClick="colorMode.change()" title="切换主题"></a></div></div></article><aside><div id="about"><a href="/project/" id="logo"><img src="http://150.158.133.44:4000/images/SitePics/head.png" alt="Logo"></a><h1 id="Dr"><a href="/">ztcly</a></h1><div id="description"><p></p></div></div><div id="aside-block"><div id="toc-div"><h1>目录</h1><ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%91%98%E8%A6%81"><span class="toc-number">1.</span> <span class="toc-text">摘要</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#C%E8%AF%AD%E8%A8%80%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1"><span class="toc-number">2.</span> <span class="toc-text">C语言程序设计</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#C%E8%AF%AD%E8%A8%80%E6%A6%82%E8%BF%B0"><span class="toc-number">2.1.</span> <span class="toc-text">C语言概述</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B"><span class="toc-number">2.2.</span> <span class="toc-text">数据类型</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%9F%BA%E6%9C%AC%E7%B1%BB%E5%9E%8B"><span class="toc-number">2.2.1.</span> <span class="toc-text">基本类型</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#%E6%95%B4%E6%95%B0%E7%B1%BB%E5%9E%8B"><span class="toc-number">2.2.1.1.</span> <span class="toc-text">整数类型</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#%E6%B5%AE%E7%82%B9%E7%B1%BB%E5%9E%8B"><span class="toc-number">2.2.1.2.</span> <span class="toc-text">浮点类型</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#%E8%8E%B7%E5%8F%96%E5%82%A8%E5%AD%98%E5%A4%A7%E5%B0%8F"><span class="toc-number">2.2.1.3.</span> <span class="toc-text">获取储存大小</span></a></li></ol></li><li class="toc-item toc-level-4"><a class="toc-link" href="#void-%E7%B1%BB%E5%9E%8B"><span class="toc-number">2.2.2.</span> <span class="toc-text">void 类型</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E8%BF%90%E7%AE%97%E7%AC%A6%E4%B8%8E%E8%A1%A8%E8%BE%BE%E5%BC%8F"><span class="toc-number">2.3.</span> <span class="toc-text">运算符与表达式</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E8%BF%90%E7%AE%97%E7%AC%A6"><span class="toc-number">2.3.1.</span> <span class="toc-text">运算符</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#%E7%AE%97%E6%9C%AF%E8%BF%90%E7%AE%97%E7%AC%A6"><span class="toc-number">2.3.1.1.</span> <span class="toc-text">算术运算符</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#%E5%85%B3%E7%B3%BB%E8%BF%90%E7%AE%97%E7%AC%A6"><span class="toc-number">2.3.1.2.</span> <span class="toc-text">关系运算符</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#%E9%80%BB%E8%BE%91%E8%BF%90%E7%AE%97%E7%AC%A6"><span class="toc-number">2.3.1.3.</span> <span class="toc-text">逻辑运算符</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#%E4%BD%8D%E8%BF%90%E7%AE%97%E7%AC%A6"><span class="toc-number">2.3.1.4.</span> <span class="toc-text">位运算符</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#%E8%B5%8B%E5%80%BC%E8%BF%90%E7%AE%97%E7%AC%A6"><span class="toc-number">2.3.1.5.</span> <span class="toc-text">赋值运算符</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#%E6%9D%82%E9%A1%B9%E8%BF%90%E7%AE%97%E7%AC%A6"><span class="toc-number">2.3.1.6.</span> <span class="toc-text">杂项运算符</span></a></li></ol></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E8%A1%A8%E8%BE%BE%E5%BC%8F"><span class="toc-number">2.3.2.</span> <span class="toc-text">表达式</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#%E4%BB%80%E4%B9%88%E6%98%AF%E8%A1%A8%E8%BE%BE%E5%BC%8F%EF%BC%9F"><span class="toc-number">2.3.2.1.</span> <span class="toc-text">什么是表达式？</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#%E8%A1%A8%E8%BE%BE%E5%BC%8F%E6%9C%89%E4%BB%80%E4%B9%88%E4%BD%9C%E7%94%A8%EF%BC%88%E8%A1%A8%E8%BE%BE%E5%BC%8F%E7%9A%84%E7%9B%AE%E7%9A%84%EF%BC%89%EF%BC%9F"><span class="toc-number">2.3.2.2.</span> <span class="toc-text">表达式有什么作用（表达式的目的）？</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#%E8%A1%A8%E8%BE%BE%E5%BC%8F%E7%9A%84%E5%B1%9E%E6%80%A7%E6%9C%89%E5%93%AA%E4%BA%9B%EF%BC%88%E8%A1%A8%E8%BE%BE%E5%BC%8F%E7%9A%84%E5%B1%9E%E6%80%A7%EF%BC%89%EF%BC%9F"><span class="toc-number">2.3.2.3.</span> <span class="toc-text">表达式的属性有哪些（表达式的属性）？</span></a></li></ol></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%BE%AA%E7%8E%AF%E6%8E%A7%E5%88%B6"><span class="toc-number">2.4.</span> <span class="toc-text">循环控制</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%BE%AA%E7%8E%AF%E7%B1%BB%E5%9E%8B"><span class="toc-number">2.4.1.</span> <span class="toc-text">循环类型</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%BE%AA%E7%8E%AF%E6%8E%A7%E5%88%B6%E8%AF%AD%E5%8F%A5"><span class="toc-number">2.4.2.</span> <span class="toc-text">循环控制语句</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%95%B0%E7%BB%84"><span class="toc-number">2.5.</span> <span class="toc-text">数组</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%A3%B0%E6%98%8E%E6%95%B0%E7%BB%84"><span class="toc-number">2.5.1.</span> <span class="toc-text">声明数组</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E8%AE%BF%E9%97%AE%E6%95%B0%E7%BB%84%E5%85%83%E7%B4%A0"><span class="toc-number">2.5.2.</span> <span class="toc-text">访问数组元素</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%A4%9A%E7%BB%B4%E6%95%B0%E7%BB%84"><span class="toc-number">2.5.3.</span> <span class="toc-text">多维数组</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#%E4%BA%8C%E7%BB%B4%E6%95%B0%E7%BB%84"><span class="toc-number">2.5.3.1.</span> <span class="toc-text">二维数组</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#%E6%95%B0%E7%BB%84%E4%BD%9C%E4%B8%BA%E5%8F%82%E6%95%B0"><span class="toc-number">2.5.3.2.</span> <span class="toc-text">数组作为参数</span></a></li></ol></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%87%BD%E6%95%B0"><span class="toc-number">2.6.</span> <span class="toc-text">函数</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%AE%9A%E4%B9%89%E5%87%BD%E6%95%B0"><span class="toc-number">2.6.1.</span> <span class="toc-text">定义函数</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%87%BD%E6%95%B0%E5%8F%82%E6%95%B0"><span class="toc-number">2.6.2.</span> <span class="toc-text">函数参数</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%8C%87%E9%92%88"><span class="toc-number">2.7.</span> <span class="toc-text">指针</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E6%8C%87%E9%92%88%E4%BD%BF%E7%94%A8%E5%AE%9E%E4%BE%8B"><span class="toc-number">2.7.1.</span> <span class="toc-text">指针使用实例</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E6%8C%87%E9%92%88%E7%9A%84%E8%BF%90%E7%AE%97"><span class="toc-number">2.7.2.</span> <span class="toc-text">指针的运算</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E6%8C%87%E9%92%88%E7%9A%84%E6%AF%94%E8%BE%83"><span class="toc-number">2.7.3.</span> <span class="toc-text">指针的比较</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%BB%93%E6%9E%84%E4%BD%93"><span class="toc-number">2.8.</span> <span class="toc-text">结构体</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%AE%9A%E4%B9%89%E7%BB%93%E6%9E%84"><span class="toc-number">2.8.1.</span> <span class="toc-text">定义结构</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%85%B1%E7%94%A8%E4%BD%93"><span class="toc-number">2.9.</span> <span class="toc-text">共用体</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%AE%9A%E4%B9%89%E5%85%B1%E7%94%A8%E4%BD%93"><span class="toc-number">2.9.1.</span> <span class="toc-text">定义共用体</span></a></li></ol></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C"><span class="toc-number">3.</span> <span class="toc-text">计算机网络</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C%E4%BD%93%E7%B3%BB%E7%BB%93%E6%9E%84"><span class="toc-number">3.1.</span> <span class="toc-text">计算机网络体系结构</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#OSI%E5%8F%82%E8%80%83%E6%A8%A1%E5%9E%8B"><span class="toc-number">3.2.</span> <span class="toc-text">OSI参考模型</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%88%86%E5%B1%82%E5%8E%9F%E5%88%99"><span class="toc-number">3.2.1.</span> <span class="toc-text">分层原则</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%B1%82%E6%AC%A1%E7%BB%93%E6%9E%84"><span class="toc-number">3.2.2.</span> <span class="toc-text">层次结构</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#TCP-x2F-IP%E5%8F%82%E8%80%83%E6%A8%A1%E5%9E%8B"><span class="toc-number">3.3.</span> <span class="toc-text">TCP&#x2F;IP参考模型</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%B1%82%E6%AC%A1%E7%BB%93%E6%9E%84-1"><span class="toc-number">3.3.1.</span> <span class="toc-text">层次结构</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%89%A9%E7%90%86%E5%B1%82"><span class="toc-number">3.4.</span> <span class="toc-text">物理层</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%9F%BA%E6%9C%AC%E6%A6%82%E5%BF%B5"><span class="toc-number">3.4.1.</span> <span class="toc-text">基本概念</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#%E6%95%B0%E6%8D%AE%E3%80%81%E4%BF%A1%E5%8F%B7%E4%B8%8E%E7%A0%81%E5%85%83"><span class="toc-number">3.4.1.1.</span> <span class="toc-text">数据、信号与码元</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#%E4%BF%A1%E6%BA%90%E3%80%81%E4%BF%A1%E9%81%93%E4%B8%8E%E4%BF%A1%E5%AE%BF"><span class="toc-number">3.4.1.2.</span> <span class="toc-text">信源、信道与信宿</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#%E9%80%9F%E7%8E%87%E3%80%81%E6%B3%A2%E7%89%B9%E4%B8%8E%E5%B8%A6%E5%AE%BD"><span class="toc-number">3.4.1.3.</span> <span class="toc-text">速率、波特与带宽</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#%E7%BC%96%E7%A0%81%E4%B8%8E%E8%B0%83%E5%88%B6"><span class="toc-number">3.4.1.4.</span> <span class="toc-text">编码与调制</span></a></li></ol></li></ol></li></ol></li></ol></div></div><footer><nobr><span class="text-title">作者</span><span class="text-content">ztcly</span></nobr><br><nobr><span class="text-title">©</span><span class="text-content">2023</span></nobr><br><nobr><span class="text-title">许可协议</span><span class="text-content">WTFPL</span></nobr><br><nobr>构建自 <a target="_blank" rel="noopener" href="http://hexo.io">Hexo</a></nobr><wbr><nobr> 使用主题 <a target="_blank" rel="noopener" href="https://github.com/Yue-plus/hexo-theme-arknights">Arknights</a></nobr><wbr><nobr>主题作者 <a target="_blank" rel="noopener" href="https://github.com/Yue-plus">Yue_plus</a></nobr></footer></aside></main><canvas id="canvas-dust"></canvas><script src="/js/search.js"></script><script class="pjax-js">reset=_=>{code.findCode();}</script><script src="/live2d-widget-master/autoload.js"></script><script src="/project/js/arknights.js"></script><script src="/project/js/pjax.js"></script><script>window.addEventListener("load",() => {pjax = new Pjax({
+ cacheBust: false,
+ selectors: ['title','article','#aside-block','.pjax-js'],
+ switches: {'article': Pjax.switches.sideBySide},
+ switchesOptions: {
+   'article': {
+     classNames: {
+       remove: "pjax-out",
+       add: "pjax-in"
+     }
+   }
+ }
+});
+document.addEventListener("pjax:complete", reset);reset()})</script><!-- hexo injector body_end start -->
+<script src="/project/js/collapse.js"></script>
+<!-- hexo injector body_end end --></body></html>
