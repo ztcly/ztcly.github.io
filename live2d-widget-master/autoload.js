@@ -1,5 +1,5 @@
 // live2d_path 参数建议使用绝对路径
-const live2d_path = "http://150.158.133.44:4000/live2d-widget-master/";
+const live2d_path = "https://www.ztcly.top/live2d-widget-master/";
 //const live2d_path = "/live2d-widget/";
 
 // 封装异步加载资源的方法
