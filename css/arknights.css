@@ -164,8 +164,8 @@
   text-decoration: underline;
 }
 :root {
-  --dark-background: url(http://150.158.133.44:4000/images/SitePics/backgroundBlack.png);
-  --light-background: url(http://150.158.133.44:4000/images/SitePics/backgroundWhite.png);
+  --dark-background: url(https://www.ztcly.top/images/SitePics/backgroundBlack.png);
+  --light-background: url(https://www.ztcly.top/images/SitePics/backgroundWhite.png);
   --dark-cursor: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAYAAAAGBAMAAAAS4vJ7AAAAElBMVEX///////////////////////+65XQCAAAABXRSTlPUzXppDN7WmLAAAAAZSURBVAjXY3ASVGEwDQ1mYA0NAGEQGyQGAC9SA/00lbgwAAAAAElFTkSuQmCC");
   --light-cursor: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAYAAAAGCAYAAADgzO9IAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAACxMAAAsTAQCanBgAAABESURBVBhXYwACHiCuAuKzUAxig8QYMoH4PxoGiTFcQRKA4StMQAIrYAZikApvMA8BGkASN4D4KxALAvFzIJ7CwMAwGwDaihLfRIaxUAAAAABJRU5ErkJggg");
 }
